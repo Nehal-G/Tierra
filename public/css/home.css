@@ -1,0 +1,260 @@
+body{
+  overflow-x: hidden;
+  background-color: #E9F3EC;
+}
+.container{
+  margin-left: 0;
+  margin-right: 0;
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+/* NAVIGATION SECTION */
+
+nav{
+  padding-right: 1.5%;
+}
+
+.logo{
+  width: 10%;
+  border-radius: 50%;
+}
+
+.brand-Name{
+  color: #5C8D89;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-item{
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.start{
+  background-color: #E9F3EC;
+  background-image: url("/images/Artboard.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 3%;
+}
+
+.btn-warning{
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* TITLE SECTION */
+
+
+.title-image{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.title-text{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.title-text p{
+  font-size: 0.9rem;
+}
+
+.highlighted-text{
+  color: #5C8D89;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+}
+
+/* SECTION 2 */
+
+#sec2{
+  margin-top: 0;
+  border-radius:2%;
+  overflow:hidden;
+  background-color: white;
+}
+
+.upper{
+  
+  margin: auto;
+  margin-top: 40px !important;
+  width:95%;
+}
+.middle{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width:95%;
+}
+
+.about-text{
+
+  margin-left: 40px;
+  width: 8px;
+}
+h1{
+font-family: Raleway;
+font-weight: bold;
+font-size: 26px;
+letter-spacing: 3px;
+  font-weight: 700;
+}
+.about-text p{
+  padding-top: 17px;
+  font-size: 14px;
+}
+.about-image{
+  position:relative;
+  left:10%;
+}
+
+.heading{
+  margin-left: 40px;
+  font-family: Raleway;
+font-weight: bold;
+font-size: 26px;
+letter-spacing: 3px;
+  font-weight: 700;
+}
+
+
+.flip-card {
+
+  width: 250px;
+  height: 300px;
+  padding:0;
+  border-radius:10px;
+  perspective: 1000px;
+  margin: auto;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius:10px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius:10px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  background-color: #E9F3EC;
+  color: black;
+
+}
+
+
+
+/* Style the back side */
+.flip-card-back {
+
+  transform: rotateY(180deg);
+}
+
+
+.flip-card p{
+    padding-top: 50px;
+}
+
+.card-image{
+    /* position: relative;
+    bottom:50px;
+    left:30px; */
+height: 200px;
+margin-top: 30px;
+
+}
+.card-name{
+    width:100%;
+    background-color: #5C8D89;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    margin-top:27px;
+}
+
+
+#contribute-heading{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#sec3{
+  background-color: #E9F3EC;
+}
+.contribute{
+  background-color: #E9F3EC;
+  width:100%;
+  text-align: center;
+ margin: auto;
+ padding: 60px 0;
+}
+h3{
+  font-weight: 700;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+p{
+font-size: 0.8rem;
+}
+.contribute-image{
+  width:30%;
+  height:30%;
+}
+
+.contri-card{
+  padding:0 80px;
+}
+
+#testimonials{
+  margin-top: 0;
+  border-radius:2%;
+  overflow:hidden;
+  background-color: white;
+}
+
+.testimonial-card{
+width:100%;
+background-color: #5C8D89;
+text-align: center;
+margin:auto;
+padding:50px 200px;
+
+}
+.testimonial-card img{
+height: 100px;
+width: auto !important;
+margin:auto;
+}
+h4{
+padding-top: 30px;
+}
+
+.carousel-section{
+text-align: center;
+
+}
+.carousel-section h1{
+
+margin-bottom: 30px;
+}

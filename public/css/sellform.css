@@ -1,0 +1,232 @@
+body
+{ background-color: #E9F3EC;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  padding:0;
+  margin: 0;
+}
+
+
+/* NAVIGATION SECTION */
+
+nav{
+  padding-right: 1.5%;
+}
+
+.logo{
+  width: 10%;
+  border-radius: 50%;
+}
+
+.brand-Name{
+  color: #5C8D89;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-item{
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.start{
+  background-color: #E9F3EC;
+  background-image: url("/images/frame.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.btn-warning{
+  color: white;
+  font-size: 0.8rem;
+}
+
+.two h1
+{ 
+  margin: auto;
+  font-size: 2.5rem;
+  color:#5C8D89;
+  font-family: 'Raleway', sans-serif;
+}
+
+.two h2{
+  color:black;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-right: 277px;
+}
+
+.habit{
+  color: black !important;
+  font-size: 0.8rem;
+}
+#title{
+  width:50%;
+  height:300px;
+}
+
+.two{
+  text-align: center;
+  padding-top: 40px;
+  margin-left: 370px;
+}
+
+.three{
+  background-color: white;
+  margin: 0px;
+  padding: 40px;
+  text-align: center;
+}
+.steps{
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size:2rem;
+}
+ol{
+  font-size: 0.9rem;
+  padding-top: 20px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+.man{
+  height: 582px;
+  width: 500px;
+}
+.steps{
+  font-family: Raleway;
+font-weight: bold;
+font-size: 22px;
+letter-spacing: 3px;
+line-height: 20px;
+}
+.list{
+  background-color: #E9F3EC;
+  width: 1100px;
+}
+.buttons{
+  background-color: white;
+  height: 150px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+  /*sellform*/
+  .form{
+      background-color: #ffffff;
+      margin-left: 5%;
+      margin-top: 1%;
+      margin-right: 5%;
+      margin-bottom: 60px;
+
+  }
+
+  .welcome{
+      margin-left: 50px;
+      padding-top: 80px;
+      font-size: 1.2rem;
+  }
+
+  .namemargin{
+      margin-left: 100px;
+      text-align: center;
+      
+  }
+  .formstatement{
+      margin-top: 40px;
+      margin-left:110px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+  }
+  .quantity{
+      margin-left: 110px;
+      margin-bottom: 15px;
+  }
+  .inr{
+      margin-left: 100px;
+  }
+  .checkboxnego{
+      margin-left: 100px;
+      
+  }
+  .addetails{
+    margin-left:110px;
+    margin-top: 60px;
+  }
+  .checkme{
+    margin-left:110px;
+    margin-bottom: 100px;
+  }
+  .paddinglabel{
+      padding-left: 15px;
+  }
+  
+  /* button */
+  .button {
+    background-color: white;
+    color:#74B49B;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 8px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #74B49B;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .button:hover {
+    background-color: #74B49B;
+    color: white;
+  }
+
+   .sellformimg{
+       width:50%;
+       display: block;
+       margin:auto;
+       margin-right: 15px;
+   }
+   .imageposition {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+    height: 300px;
+}
+
+.twoimg{
+  width:50%;
+  display: block;
+  margin:auto;
+  margin-left: -40px;
+  transform: translateY(-50%);
+  
+}
+#rules{
+display: inline-block;
+height: 100%;
+width: 100%
+
+
+
+}
+.mailimg{
+  
+  
+  transform: translateY(-40%);
+}
+.positionimg{
+  height: 200px;
+}
+
+
+
+ 

@@ -1,0 +1,209 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="/css/itemDetails.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+    <section id="start" class="start">
+
+    <!-- NAVIGATION BAR -->
+    <section id="navigation">
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="/home" class="brand-Name"> <img src="images\logo.png" alt="" class="d-inline-block logo">&nbsp;TIERRA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item"><a class="nav-link" href="/cart"> <i class="fas fa-shopping-cart"></i>CART</a></li>
+           <li class="navbar-item"><img src="<%=pic%>" width="40" height="40" alt=""></li>
+            <li class="navbar-item"><a href="/logout" class="btn btn-default btn-sm">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </section>
+
+   
+    <section id="services" class="services section-bg">
+        <div class="container-fluid">
+           <div class="row row-sm">
+              <div class="col-md-6 _boxzoom">
+                 <div class="zoom-thumb">
+                    <ul class="piclist">
+                       <li><img src="<%=image2%>" alt=""></li>
+                       <li><img src="<%=image2%>" alt=""></li>
+                       <li><img src="<%=image2%>" alt=""></li>
+                       <li><img src="<%=image2%>" alt=""></li>
+                    </ul>
+                 </div>
+                 <div class="_product-images">
+                    <div class="picZoomer">
+                       <img class="main_img" src="<%=image%>" alt="">
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="_product-detail-content">
+                    <h1 class="company-name"></h1>Company Name, City, State</h1>
+                    <p class="_p-name"><%=itemName%></p>
+
+                    <div class="_p-price-box">
+                       <div class="p-list">
+                          <span> M.R.P. : <i class="fa fa-inr"></i> <del> 1399  </del>   </span>
+                          <span class="price"> Rs. 699 </span>
+                       </div>
+                       <div class="_p-add-cart">
+                          <div class="_p-qty">
+                             <span>Add Quantity</span>
+                             <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                             <input type="number" name="qty" id="number" value="1" />
+                             <div class="value-button increase_" id="" value="Increase Value">+</div>
+                          </div>
+                       </div>
+                       <div class="_p-features">
+                          <span> Description About this product:- </span>
+                          Solid color polyester/linen full blackout thick sunscreen floor curtain
+                          Type: General Pleat
+                          Applicable Window Type: Flat Window
+                          Format: Rope
+                          Opening and Closing Method: Left and Right Biparting Open
+                          Processing Accessories Cost: Included
+                          Installation Type: Built-in
+                          Function: High Shading(70%-90%)
+                          Material: Polyester / Cotton
+                          Style: Classic
+                          Pattern: Embroidered
+                          Location: Window
+                          Technics: Woven
+                          Use: Home, Hotel, Hospital, Cafe, Office
+                          Feature: Blackout, Insulated, Flame Retardant
+                          Place of Origin: India
+                          Name: Curtain
+                          Usage: Window Decoration
+                          Keywords: Ready Made Blackout Curtain
+                       </div>
+                       <form action="" method="post" accept-charset="utf-8">
+                          <ul class="spe_ul"></ul>
+                          <div class="_p-qty-and-cart">
+                             <div class="_p-add-cart">
+                                <button class="btn-theme btn buy-btn" tabindex="0">
+                                <a href = "/address"><i class="fa fa-shopping-cart" ></i> Buy Now</a>
+                                </button>
+                                <button class="btn-theme btn btn" tabindex="0">
+                                  <a href = "/cart"><i class="fa fa-shopping-cart" ></i>Add to Cart</a>
+                                </button>
+                                <input type="hidden" name="pid" value="18" />
+                                <input type="hidden" name="price" value="850" />
+                                <input type="hidden" name="url" value="" />
+                             </div>
+                          </div>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+     <section id="sell-page">
+
+        <!-- TRENDING -->
+
+        <div class="container deals">
+
+          <h4 class="head-deal">CATEGORIES TO BAG</h4>
+
+          <div class="row trends justify-content-evenly">
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card" style="width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+              <h6 class="card-title trending-content">Product Name</h6>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+            <img src="<%=image%>" class=" card-img-top trending" alt="">
+            <h6 class="card-title trending-content">Product Name</h6>
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <div class=" card " style=" width:10rem;"">
+          <img src="<%=image%>" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">Product Name</h6>
+        </div>
+        </div>
+
+        </div>
+
+        </div>
+
+      </section>
+    </section>
+
+<%-include ("partials/footer") -%>

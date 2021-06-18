@@ -1,0 +1,123 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="/css/sellform.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+<section id="start" class="start">
+
+    <!-- NAVIGATION BAR -->
+    <section id="navigation">
+      <div class="container-fluid navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a href="/home" class="brand-Name"> <img src="images\logo.png" alt="" class="d-inline-block logo">&nbsp;TIERRA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="navbar-item"><a class="nav-link" href="/">HOME</a></li>
+              <li class="navbar-item"> <a class="nav-link" href="/shop">SHOP</a></li>
+              <li class="navbar-item"><a class="nav-link active" style="color:#5C8D89; font-weight: bold;" aria-current="page" href="#">SELL</a></li>
+              <li class="navbar-item"><a class="nav-link" href="/ourteam">TEAM</a></li>
+              <li class="navbar-item"><button type="button" class="btn btn-warning">SIGN IN</button></li>
+  
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+  
+    <section id="title">
+    <div class="top">
+      
+      <div class="two">
+        <h2>LET'S MAKE</h2>
+        <h1><b>SUSTAINABILITY </b> <span class="habit">A HABIT</span></h1>
+      </div>
+      <div class= "twoimg">
+        <img src="\images\man.png" alt="image"></div>
+      
+    </div>
+    </section>
+  
+    <section id="rules">
+      <div class="three">
+        <p class="steps"><b>STEPS TO FOLLOW:</b></p>
+      </div>
+      <div class="row positionimg">
+      <div class="col-9">
+        <div class="list">
+          <ol>
+          <li>Sign up to Title.com with your account</li>
+          <li>Verify your email-address</li>
+          <li>Complete your seller profile</li>
+          <li>Add product details, product description and  images and other relevant information</li>
+          <li>Click submit and you are GOOD TO GO!</li>
+        </ol>
+      </div></div>
+      <div class="col-3 mailimg">
+                
+           <img src="/images/mail.png" alt="image">    
+      </div>
+    </div>
+    </section>
+  <section class = "form">
+     <h2 class="welcome"><b>WELCOME XYZ </b></h2>
+     <h4 class = "formstatement"><b>Enter the following details to add product:</b></h4>
+     <form>
+         <div class = "form-row namemargin">
+         <div class = "col-7">
+        <div class="form-group">
+           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PRODUCT NAME">
+        </div></div></div>
+        <div class = "form-row namemargin">
+        <div class = "col-7">
+        <div class="form-group">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="PRODUCT DESCRIPTION"></textarea>
+        </div></div></div>
+        <div class = "form-row">
+            <div class= "col-1 quantity">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferencce</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Quantity</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                  <option value="3">7</option>
+                  <option value="3">8</option>
+                </select>
+            </div>
+            <div class="col-sm-2 my-1 inr">
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Quote Price in INR">
+              </div>
+              <div class="custom-control custom-checkbox my-1 mr-sm-2 checkboxnego">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline"><b>Negotiable</b></label>
+              </div>
+              <div class = "col-7">
+                <div class="form-group addetails">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="ADDITIONAL DETAILS (OPTIONAL)"></textarea>
+                </div></div>
+             <div class="col-7">
+                <div class="form-check checkme">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label paddinglabel" for="exampleCheck1"><b>Click here to indicate that you have read and agree to the terms presented in the Terms and Conditions agreement</b></label>
+                  </div>
+             </div>
+              
+        </div>
+      </form>
+      <div class="buttons">
+       <button class="button">ADD PRODUCT</button>
+      </div>
+
+
+     </section>
+
+</section>
+   
+  <%-include ("partials/footer") -%>

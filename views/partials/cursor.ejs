@@ -1,0 +1,46 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+<div class="circle" id="circle1">
+    <svg width="30" height="30">
+      <circle cx="15" cy="15" r="15" fill="#5C8D89"></circle>
+    </svg>
+  </div>
+  <div class="circle" id="circle2">
+    <svg width="20" height="20">
+      <circle cx="10" cy="10" r="10" fill="#E9F3EC"></circle>
+    </svg>
+  </div>
+
+  <script>
+
+    var circle1 = document.getElementById("circle1");
+    var circle2 = document.getElementById("circle2");
+
+    TweenLite.set(circle1, {
+      xPercent: -5,
+      yPercent: -5
+    });
+
+    TweenLite.set(circle2, {
+      xPercent: -5,
+      yPercent: -5
+    });
+
+    window.addEventListener("mousemove", moveCircle);
+
+    function moveCircle(e) {
+      TweenLite.to(circle1, 0.3, {
+        x: e.clientX,
+        y: e.clientY
+      });
+
+      TweenLite.to(circle2, 0.7, {
+        x: e.clientX,
+        y: e.clientY
+      });
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body{
+    overflow-x: hidden;
+    background-color: white;
+  }
+
+  .container-fluid.navigation{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  /* NAVIGATION SECTION */
+
+  nav{
+    padding-right: 1.5%;
+    background-color: #E9F3EC;
+    padding-bottom: 0%;
+  }
+
+  .logo{
+    width: 10%;
+    border-radius: 50%;
+  }
+
+  .brand-Name{
+    color: #5C8D89;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .navbar-item{
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+  .fa-shopping-cart{
+   padding-right: 2.2px;
+  }
+
+  .start{
+    background-color: white;
+    background-repeat: no-repeat;
+  }
+
+  .btn-warning{
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  /* TITLE SECTION */
+
+
+  .title-image{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .title-text{
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .title-text p{
+    font-size: 0.9rem;
+  }
+
+  .highlighted-text{
+    color: #5C8D89;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  /* PAYMENT */
+
+  .container{
+    margin: auto;
+    margin-top: 25px;
+      width: 60%;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+  }
+  img{
+      max-height: 40%;
+      width: 80%;
+  }

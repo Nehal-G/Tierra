@@ -1,0 +1,135 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="/css/cart.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+<section id="start" class="start">
+
+
+        <!-- NAVIGATION BAR -->
+        <section id="navigation">
+            <div class="container-fluid navigation">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                  <a href="/home" class="brand-Name"> <img src="images\logo.png" alt="" class="d-inline-block logo">&nbsp;TIERRA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="navbar-item"><a class="nav-link" href="/cart"> <i
+                                        class="fas fa-shopping-cart"></i>CART</a></li>
+                                        <li class="navbar-item"><img src="<%=pic%>" width="40" height="40" alt=""></li>
+                                        <li class="navbar-item"><a href="/logout" class="btn btn-default btn-sm">Logout</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section id="cart">
+              <!-- cart items details -->
+
+  <section id="cart">
+    <!-- cart items details -->
+
+    <div class="small-container cart-page">
+      <form  action="/cart" method="post">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/IM2.jpeg" alt="" />
+              <div>
+                <p>Scrunchy</p>
+                <small>Price ₹500.00</small>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name= "item1" value="1" /></td>
+          <td>₹500.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/IM2.jpeg" alt="" />
+              <div>
+                <p>Scrunchy</p>
+                <small>Price ₹1500.00</small>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+                <input type="number" name= "item2" value="1" />
+
+          </td>
+          <td>₹1500.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/IM2.jpeg" alt="" />
+              <div>
+                <p>Scrunchy</p>
+                <small>Price ₹1500.00</small>
+                <br />
+                <a href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" name= "item3" value="1" /></td>
+          <td>₹1500.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>₹3500.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>₹15.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>₹3515.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="container"></div>
+
+      <button type="submit" name="button" class="btn btn-warning">
+        PROCEED TO PAYMENT
+        </button>
+      </form>
+    </div>
+
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+      MenuItems.style.maxHeight = '0px';
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+  </section>
+
+</section>
+
+<%-include ("partials/footer") -%>

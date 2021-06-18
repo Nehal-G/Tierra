@@ -1,0 +1,621 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="/css/shop.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+<section id="start" class="start">
+
+  <!-- NAVIGATION BAR -->
+  <section id="navigation">
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a href="/home" class="brand-Name"> <img src="images\logo.png" alt="" class="d-inline-block logo">&nbsp;TIERRA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item"><a class="nav-link" href="/">HOME</a></li>
+            <li class="navbar-item"> <a class="nav-link active" style="color:#5C8D89; font-weight: bold;" aria-current="page" href="#">SHOP</a></li>
+            <li class="navbar-item"><a class="nav-link" href="/sell">SELL</a></li>
+            <li class="navbar-item"><a class="nav-link" href="/ourteam">TEAM</a></li>
+            <li class="navbar-item"><img src="<%=pic%>" width="40" height="40" alt=""></li>
+            
+            <li class="navbar-item"><a href="/logout" class="btn btn-default btn-sm">LOGOUT</a></li>
+
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- TITLE SECTION -->
+
+  <section id="titleSection">
+
+    <div class="container shop">
+      <div class="row title-row">
+        <div class="col-lg-6 title-image">
+          <img src="\images\12d0d374fada476955274f21c1519055-removebg-preview.png" alt="image">
+        </div>
+        <div class="col-lg-6 title-text">
+          <h4 class="highlighted-text">SHOP TO SAVE!</h4>
+          <p>We have the power to change the world by just being careful what we buy.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- DEAL, CATEGORIES -->
+
+  <section id="sell-page">
+
+    <!-- DEALS OF THE DAY -->
+
+    <div class="container deals">
+      <h4 class="head-deal">DEAL OF THE DAY</h4>
+
+      <div class="carousel-wrapper">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <a href="/shop/catDetails/scrunchies-wallet">
+              <div class="card" style="width:12.5rem;"">
+          <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">SCRUNCHIE WALLET</h5>
+                    <!-- <h5 class="card-title" name="price" value="Scrunchies">70</h5> -->
+                  </div>
+
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="/shop/catDetails/hairband-wallet">
+              <div class="card" style="width:12.5rem;">
+                <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">HAIRBAND WALLET</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/shop/catDetails/picture-frames">
+              <div class="card" style="width:12.5rem;">
+                <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">PICTURE FRAMES</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/shop/catDetails/shopping-bags">
+              <div class="card" style="width:12.5rem;"">
+          <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">SHOPPING BAGS</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/shop/catDetails/storage-containers">
+              <div class="card" style="width:12.5rem;"">
+          <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">STORAGE CONTAINER</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/shop/catDetails/rubber-planters">
+              <div class="card" style="width:12.5rem;"">
+          <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">RUBBER PLANTERS</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/shop/catDetails/Mats-and-rugs">
+              <div class="card" style="width:12.5rem;"">
+          <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">MATS AND RUGS</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/shop/catDetails/surfboard-fins">
+              <div class="card" style="width:12.5rem;"">
+          <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">SURFBOARD FINS</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/shop/catDetails/cups-and-glasses">
+              <div class="card" style="width:12.5rem;"">
+          <img src=" images\IM2.jpeg" class=" card-img-top" alt="">
+                <div class="row content">
+                  <div class="col-6 ">
+                    <h5 class="card-title ">CUPS AND GLASSES</h5>
+                    <!-- <h5 class="card-title ">Price</h5> -->
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- THRIFTING -->
+
+        <div class="container deals">
+          <h4 class="head-deal">THRIFTING</h4>
+
+          <div class="carousel-wrapper">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <a href="/shop/catDetails/sweaters">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">SWEATERS</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+
+                    </div>
+
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/shop/catDetails/jumpers">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">JUMPERS</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+
+                    </div>
+
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/shop/catDetails/dresses">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">DRESSES</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+                    </div>
+
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/shop/catDetails/shirts">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">SHIRTS</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+                    </div>
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/shop/catDetails/jackets">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">JACKETS</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+
+                    </div>
+
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="/shop/catDetails/coats">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">COATS</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+
+                    </div>
+
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/shop/catDetails/shorts">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">SHORTS</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+
+                    </div>
+
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/shop/catDetails/skirts">
+                  <div class="card" style="width:12.5rem;"">
+    <img src=" images\IM3.jpeg" class=" card-img-top" alt="">
+                    <div class="row content">
+                      <div class="col-6 ">
+                        <h5 class="card-title ">SKIRTS</h5>
+                        <!-- <h5 class="card-title ">Price</h5> -->
+                      </div>
+                      <div class="col-6">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+
+                    </div>
+
+                    <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- CATEGORIES -->
+
+        <div class="container deals">
+          <h4 class="head-deal">CATEGORIES TO BAG</h4>
+          <div class="row justify-content-evenly">
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+              <a href="/shop/catDetails/fashion">
+              <div class=" card Category" style="width:10rem;">
+                <i class=" fas fa-cog"></i>
+                <h6 class="card-title">FASHION</h6>
+              </div>
+              </a>
+            </div>
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+              <a href="/shop/catDetails/plastic">
+              <div class=" card Category" style="width:10rem;">
+                <i class=" fas fa-cog"></i>
+                <h6 class="card-title">PLASTIC</h6>
+              </div>
+              </a>
+            </div>
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+              <a href="/shop/catDetails/buttons">
+              <div class=" card Category" style="width:10rem;">
+                <i class=" fas fa-cog"></i>
+                <h6 class="card-title">BUTTONS</h6>
+              </div>
+              </a>
+            </div>
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+              <a href="/shop/catDetails/gifting-materials">
+              <div class=" card Category" style="width:10rem;">
+                <i class=" fas fa-cog"></i>
+                <h6 class="card-title">GIFTING</h6>
+              </div>
+              </a>
+            </div>
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+              <a href="/shop/catDetails/cloth">
+              <div class=" card Category" style="width:10rem;">
+                <i class=" fas fa-cog"></i>
+                <h6 class="card-title">CLOTH</h6>
+              </div>
+              </a>
+            </div>
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+              <a href="/shop/catDetails/miscellaneous">
+              <div class=" card Category" style="width:10rem;">
+                <i class=" fas fa-cog"></i>
+                <h6 class="card-title">MISCELLANEOUS</h6>
+              </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- TRENDING -->
+
+        <div class="container deals">
+
+          <h4 class="head-deal">RAW MATERIALS</h4>
+
+          <div class="row trends justify-content-evenly">
+
+            <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+              <a href="/shop/catDetails/torn-clothes">
+        <div class=" card" style="width:10rem;"">
+      <img src=" images\IM3.jpeg" class=" card-img-top trending" alt="">
+              <h6 class="card-title trending-content">TORN CLOTHES</h6>
+            </div>
+            </a>
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+            <a href="/shop/catDetails/zippers">
+        <div class=" card " style=" width:10rem;"">
+            <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+            <h6 class="card-title trending-content">ZIPPERS</h6>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+          <a href="/shop/catDetails/buttons">
+        <div class=" card " style=" width:10rem;"">
+          <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+          <h6 class="card-title trending-content">BUTTONS</h6>
+        </div>
+        </a>
+      </div>
+
+      <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+        <a href="/shop/catDetails/wool">
+        <div class=" card " style=" width:10rem;"">
+        <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+        <h6 class="card-title trending-content">WOOL</h6>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/canvas">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">CANVAS</h6>
+    </div>
+    </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/denim">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">DENIM</h6>
+    </div>
+    </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/velvet">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">VELVET</h6>
+    </div>
+    </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/leather">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">LEATHER</h6>
+    </div>
+    </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/linen">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">LINEN</h6>
+    </div>
+    </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/gift-wrappers">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">GIFT WRAPPERS</h6>
+    </div>
+    </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/basket-filler">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">BASKET FILLER</h6>
+    </div>
+    </a>
+    </div>
+
+    <div class="col-xl-2 col-md-3 col-sm-4 col-6"">
+      <a href="/shop/catDetails/packing-flower">
+        <div class=" card " style=" width:10rem;"">
+      <img src="images\IM3.jpeg" class=" card-img-top trending" alt="">
+      <h6 class="card-title trending-content">PACKING FLOWERS</h6>
+    </div>
+    </a>
+    </div>
+
+    </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHAT DO YOU GET -->
+
+  <section id="reward">
+    <div class=" rewardPoints ">
+
+      <img src="\images\rewards.png" alt="" class="img-fluid">
+    </div>
+  </section>
+
+  <!-- EMPTY DIV -->
+  <div class="empty">
+
+  </div>
+
+  <!-- BENEFITS -->
+
+  <section id="Benefits">
+
+    <div class="container-fluid features deal">
+
+      <div class="row benefits">
+
+        <div class="col-sm-4">
+          <img src="\images\green-energy.png" class="benefits-img" alt="">
+          <h6 class="benefit-head">Reusability</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <img src="\images\green-house.png" class="benefits-img" alt="">
+          <h6 class="benefit-head">Live Order Tracking</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="col-sm-4 ">
+          <img src="\images\electric-bike.png" class="benefits-img" alt="">
+          <h6 class="benefit-head">Lightening Fast delivery</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+</section>
+
+<%-include ("partials/footer") -%>

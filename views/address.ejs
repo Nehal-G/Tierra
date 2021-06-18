@@ -1,0 +1,149 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="/css/address.css">
+
+
+<!-- NAVIGATION BAR -->
+<section id="navigation">
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+		<a href="/home" class="brand-Name"> <img src="images\logo.png" alt="" class="d-inline-block logo">&nbsp;TIERRA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item"><a class="nav-link" href="/home">HOME</a></li>
+            <li class="navbar-item"> <a class="nav-link active" style="color:#5C8D89; font-weight: bold;" aria-current="page" href="#">SHOP</a></li>
+            <li class="navbar-item"><a class="nav-link" href="/sell">SELL</a></li>
+            <li class="navbar-item"><a class="nav-link" href="/ourteam">TEAM</a></li>
+            <li class="navbar-item"><img src="<%=pic%>" width="40" height="40" alt=""></li>
+            <li class="navbar-item"><a href="/logout" class="btn btn-default btn-sm">LOGOUT</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+		<div class="col-md-4 container bg-default">
+			<form class="" action="/address" method="post">
+
+            <section id="address">
+			<h4 class="my-4">
+					Billing Address
+			</h4>
+
+
+				<div class="form-row">
+					<div class="col-md-6 form-group">
+						<label for="firstname">First Name</label>
+						<input type="text" class="form-control" id="firstname" placeholder="First Name">
+						<div class="invalid-feedback">
+							Valid first name is required.
+						</div>
+					</div>
+
+					<div class="col-md-6 form-group">
+						<label for="lastname">Last Name</label>
+						<input type="text" class="form-control" id="lastname" placeholder="Last Name">
+						<div class="invalid-feedback">
+							Valid last name is required.
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="username">Username</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">@</span>
+							</div>
+							<input type="text" class="form-control" id="username" placeholder="Username" required>
+							<div class="invalid-feedback">
+								Your username is required.
+							</div>
+						</div>
+				</div>
+
+				<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+				</div>
+
+				<div class="form-group">
+					<label for="adress">Address</label>
+					<input type="text" class="form-control" id="adress" name="addressLine1" placeholder="1234 Main Street" required>
+					<div class="invalid-feedback">
+						Please enter your shipping address.
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="address2">Address 2
+						<span class="text-muted">(Optional)</span>
+					</label>
+					<input type="text" class="form-control" id="adress2" name="addressLine2" placeholder="Flat No">
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 form-group">
+						<label for="country">State</label>
+						<select type="text" class="form-control" id="country" name="state">
+							<option value>Choose</option>
+							<option>Delhi</option>
+                            <option>Maharashtra</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Goa</option>
+						</select>
+						<div class="invalid-feedback">
+							Please select a valid state.
+						</div>
+					</div>
+
+					<div class="col-md-4 form-group">
+						<label for="city">City</label>
+						<select type="text" class="form-control" id="city" name="city">
+							<option value>Choose</option>
+							<option>Bareilly</option>
+                            <option>Delhi</option>
+                            <option>Mumbai</option>
+						</select>
+						<div class="invalid-feedback">
+							Please provide a valid city.
+						</div>
+					</div>
+
+					<div class="col-md-4 form-group">
+						<label for="postcode">Pincode</label>
+						<select type="text" class="form-control" id="postcode" name="pincode">
+							<option value>Choose...</option>
+							<option>243403</option>
+                            <option>243001</option>
+						</select>
+						<div class="invalid-feedback">
+							Pincode required.
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="shipping-adress">
+						Shipping address is the same as my billing address
+					<label for="shipping-adress" class="form-check-label"></label>
+				</div>
+
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="same-adress">
+						Save this information for next time
+					<label for="same-adress" class="form-check-label"></label>
+					</div>
+
+                </section>
+                <a href="/payment"><button class="btn btn-primary bt-lg btn-block" type="submit">Continue</button></a>
+	</form>
+		</div>
+
+</body>
+</html>

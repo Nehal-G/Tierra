@@ -1,0 +1,224 @@
+body{
+    overflow-x: hidden;
+    background-color: #E9F3EC;
+  }
+
+  .container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  /* NAVIGATION SECTION */
+
+  nav{
+    padding-right: 1.5%;
+  }
+
+a:hover{
+  text-decoration: none;
+}
+
+  .logo{
+    width: 10%;
+    border-radius: 50%;
+  }
+
+  .brand-Name{
+    color: #5C8D89;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .navbar-item{
+    padding: 2px;
+    font-size: 0.8rem;
+  }
+
+  .start{
+    background-color: #E9F3EC;
+    background-image: url("/images/Artboard.svg");
+    background-repeat: no-repeat;
+    padding-bottom: 3%;
+  }
+
+  .btn-warning{
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  /* TITLE SECTION */
+
+
+  .title-image{
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .title-text{
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .title-text p{
+    font-size: 0.9rem;
+  }
+
+  .highlighted-text{
+    color: #5C8D89;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+  }
+
+  /* SHOPPING */
+
+  #sell-page{
+    margin-top: 0;
+    border-radius:2%;
+    overflow:hidden;
+    background-color: white;
+
+
+  }
+
+  .deals{
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .head-deal{
+  margin-top: 4%;
+  margin-bottom: 1.7%;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 42px;
+  }
+
+
+  .card{
+      border-radius:5%;
+      background-color:#E9F3EC;
+      border:none;
+      margin-left: 12%;
+      margin-bottom: 10%;
+
+  }
+
+  .card-img-top{
+    width:100%;
+    height: 20vh;
+    object-fit:cover;
+      border-radius:5% 5% 0 0;
+  }
+
+  .card-text{
+    padding-bottom: 6%;
+    font-size: 0.7rem;
+    padding-left: 4%;
+    margin: 1%;
+  }
+
+  .card-title{
+  font-size: 0.75rem;
+  }
+
+  .content{
+    margin-top: 5%;
+
+  }
+
+  .fa-shopping-cart{
+    float: right;
+    margin-right: 25%;
+    background-color: #5C8D89;
+   color: white;
+   padding: 2.2px;
+  }
+
+
+  .fa-cog{
+    font-size: 4rem;
+  margin-bottom: 5%;
+  color: #5C8D89;
+
+  }
+
+  .Category{
+    text-align: center;
+    padding: 20%;
+    vertical-align: middle;
+
+  }
+
+  .trending{
+
+    width:100%;
+    height: 23vh;
+    object-fit:cover;
+
+  }
+
+  .trending-content{
+    padding: 5%;
+      padding-top: 15%;
+    text-align: center;
+  }
+
+  .trends{
+    margin-bottom: 2%;
+  }
+
+  /* WHAT DO YOU GET */
+
+
+  .empty{
+    background-color: white;
+
+    padding: 2%;
+  }
+
+  /* BENEFITS */
+
+  .benefits-img{
+    width: 30%;
+    padding: 5%;
+    margin-top: 4%;
+  }
+
+  .benefits{
+    text-align: center;
+  }
+
+  .benefit-head{
+    font-weight: bolder;
+  font-size: 1rem;
+  padding: 0;
+  margin: 2%;
+  }
+
+  .benefit-head p{
+    font-size: 0.7rem;
+  }
+
+
+
+  @media screen and (max-width: 990px) {
+  .shop{
+  margin-left:auto;
+  margin-right: auto;
+  }
+
+  .title-text{
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  }
